@@ -2,32 +2,28 @@
   <div class="container">
     <TopMenu />
     <HeroTop />
-    <AboutView />
-    <ResumeView v-show="false" />
-    <WorkView v-show="false" />
-    <BlogView v-show="false" />
-    <ContactView v-show="false" />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import TopMenu from './TopMenu.vue'
 import HeroTop from './HeroTop.vue'
-import AboutView from '../views/AboutView.vue'
-import ResumeView from '@/views/ResumeView.vue'
-import WorkView from '@/views/WorkView.vue'
-import BlogView from '@/views/BlogView.vue'
-import ContactView from '@/views/ContactView.vue'
+// import AboutView from '../views/AboutView.vue'
+// import ResumeView from '@/views/ResumeView.vue'
+// import WorkView from '@/views/WorkView.vue'
+// import BlogView from '@/views/BlogView.vue'
+// import ContactView from '@/views/ContactView.vue'
 export default {
   name: 'ContainerAll',
   components: {
     TopMenu,
-    AboutView,
-    ResumeView,
-    HeroTop,
-    WorkView,
-    BlogView,
-    ContactView
+    // AboutView,
+    // ResumeView,
+    HeroTop
+    // WorkView,
+    // BlogView,
+    // ContactView
   }
 }
 </script>

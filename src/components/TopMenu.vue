@@ -4,38 +4,39 @@
       <div class="top-menu">
         <ul>
           <li class="active" data-menu="about">
-            <a href="#about">
+            <router-link to="/about">
               <i class="fas fa-user"></i>
               <span class="link">about</span>
-            </a>
+            </router-link>
           </li>
           <li data-menu="resume">
-            <a href="#resume">
+            <router-link to="/resume">
               <i class="fas fa-file"></i>
               <span class="link">resume</span>
-            </a>
+            </router-link>
           </li>
           <li data-menu="work">
-            <a href="#work">
+            <router-link to="/work">
               <i class="fas fa-paint-brush"></i>
               <span class="link">work</span>
-            </a>
+            </router-link>
           </li>
           <li data-menu="blog">
-            <a href="#blog">
+            <router-link to="/blog">
               <i class="fas fa-comment-dots"></i>
               <span class="link">blog</span>
-            </a>
+            </router-link>
           </li>
           <li data-menu="contact">
-            <a href="#contact">
+            <router-link to="/contact">
               <i class="fas fa-at"></i>
               <span class="link">contact</span>
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>
     </header>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 

@@ -6,8 +6,18 @@
     <div class="hero-info">
       <h2 class="title">ryan adlard</h2>
       <div class="hero-details">
-        <h3 class="subtitle" id="subtitle"></h3>
-        <p class="blink">|</p>
+        <!-- <h3 class="subtitle" ref="subtitle"></h3> -->
+        <vue-typed-js
+          class="subtitle"
+          :strings="words"
+          :loop="true"
+          :typeSpeed="200"
+          :startDelay="300"
+          :backSpeed="50"
+        >
+          <h3 class="typing"></h3>
+        </vue-typed-js>
+        <!-- <p class="blink">|</p> -->
       </div>
     </div>
     <div class="social">
@@ -19,13 +29,23 @@
     </div>
     <div class="links">
       <a href="#">download cv</a>
-      <a href="#contact" data-menu="contact" id="contact-me">contact me</a>
+      <!-- <a href="#contact" data-menu="contact" id="contact-me">contact me</a> -->
+      <router-link to="/contact" data-menu="contact" id="contact-me"
+        >contact me</router-link
+      >
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+/* eslint-disable */
+export default {
+  data() {
+    return {
+      words: ['web designer', 'developer', 'freelancer']
+    }
+  }
+}
 </script>
 
 <style scoped>

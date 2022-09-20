@@ -1,5 +1,5 @@
 <template>
-  <section id="blog" class="blog">
+  <section id="blog" class="blog active">
     <div class="my-blog p-3">
       <h3 class="specialtitle">b <span>log</span></h3>
       <div class="blog-container">
@@ -138,5 +138,32 @@ export default {
 
 .blog .my-blog .blog-container .box:hover .box-desc a {
   color: var(--greenColor);
+}
+@media (min-width: 1200px) {
+  .about,
+  .resume,
+  .work,
+  .blog,
+  .contact {
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 47%;
+    right: 0;
+    bottom: 1.5rem;
+    max-width: 65rem;
+    height: 100%;
+    z-index: -1;
+  }
+}
+@media (min-width: 1234px) {
+  .about,
+  .resume,
+  .work,
+  .blog,
+  .contact {
+    left: 45%;
+  }
 }
 </style>

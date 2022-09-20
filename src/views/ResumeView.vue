@@ -1,5 +1,5 @@
 <template>
-  <section id="resume" class="resume">
+  <section id="resume" class="resume active">
     <div class="my-resume p-3">
       <h3 class="specialtitle">R<span>esume</span></h3>
       <div class="row">
@@ -537,10 +537,38 @@ export default {
   }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .about .services,
   .resume .skills {
     padding-top: 0;
+  }
+} */
+
+@media (min-width: 1200px) {
+  .about,
+  .resume,
+  .work,
+  .blog,
+  .contact {
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 0;
+    left: 47%;
+    right: 0;
+    bottom: 1.5rem;
+    max-width: 65rem;
+    height: 100%;
+    z-index: -1;
+  }
+}
+@media (min-width: 1234px) {
+  .about,
+  .resume,
+  .work,
+  .blog,
+  .contact {
+    left: 45%;
   }
 }
 </style>
