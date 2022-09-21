@@ -16,8 +16,8 @@
         </div>
         <div class="info-list">
           <ul>
-            <li><strong>address . . . . .</strong> California USA</li>
-            <li><strong>email . . . . .</strong> adlard@example.com</li>
+            <li><strong>地址 . . . . .</strong> 河南</li>
+            <li><strong>email . . . . .</strong> 2383993669@qq.com</li>
             <li><strong>phone . . . . .</strong> +123 654 78900</li>
             <li><strong>freelance . . . . .</strong> available</li>
           </ul>

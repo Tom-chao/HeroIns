@@ -4,7 +4,7 @@
       <img src="../assets/profile.jpg" alt="" />
     </div>
     <div class="hero-info">
-      <h2 class="title">ryan adlard</h2>
+      <h2 class="title">曹永超</h2>
       <div class="hero-details">
         <!-- <h3 class="subtitle" ref="subtitle"></h3> -->
         <vue-typed-js
@@ -31,7 +31,7 @@
       <a href="#">download cv</a>
       <!-- <a href="#contact" data-menu="contact" id="contact-me">contact me</a> -->
       <router-link to="/contact" data-menu="contact" id="contact-me"
-        >contact me</router-link
+        >联系我</router-link
       >
     </div>
   </div>

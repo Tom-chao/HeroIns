@@ -1,21 +1,21 @@
 <template>
   <section id="about" class="about active">
     <div class="about-me p-3">
-      <h3 class="specialtitle">about <span>me</span></h3>
+      <h3 class="specialtitle">关于 <span>我</span></h3>
       <div class="row">
         <div class="text">
           <p>
-            I am Ryan Adlard, web designer from USA, California. I have rich
-            experience in web site design and building and customization, also I
-            am good at wordpress. I love to talk with you about our unique.
+            我叫曹永超，是一名初级前端开发人员，今年23岁，毕业于南阳理工学院计算机与软件学院，
+            有一定的web开发经验，开发过响应式网页，小程序等。喜欢钻研新技术，乐于与人分享自己
+            的见解。热爱生活，积极向上。
           </p>
         </div>
         <div class="info">
           <ul>
-            <li><strong>age . . . . .</strong> 30</li>
-            <li><strong>residence . . . . .</strong> USA</li>
-            <li><strong>freelance . . . . .</strong> available</li>
-            <li><strong>address . . . . .</strong> California, USA</li>
+            <li><strong>年龄 . . . . .</strong> 23</li>
+            <li><strong>性别 . . . . .</strong> 男</li>
+            <li><strong>职业状况 . . . . .</strong> 无</li>
+            <li><strong>地址 . . . . .</strong> 河南</li>
           </ul>
         </div>
       </div>

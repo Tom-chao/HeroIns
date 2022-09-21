@@ -6,31 +6,31 @@
           <li class="active" data-menu="about">
             <router-link to="/about">
               <i class="fas fa-user"></i>
-              <span class="link">about</span>
+              <span class="link">关于</span>
             </router-link>
           </li>
           <li data-menu="resume">
             <router-link to="/resume">
               <i class="fas fa-file"></i>
-              <span class="link">resume</span>
+              <span class="link">工作经历</span>
             </router-link>
           </li>
           <li data-menu="work">
             <router-link to="/work">
               <i class="fas fa-paint-brush"></i>
-              <span class="link">work</span>
+              <span class="link">项目经历</span>
             </router-link>
           </li>
           <li data-menu="blog">
             <router-link to="/blog">
               <i class="fas fa-comment-dots"></i>
-              <span class="link">blog</span>
+              <span class="link">博客</span>
             </router-link>
           </li>
           <li data-menu="contact">
             <router-link to="/contact">
               <i class="fas fa-at"></i>
-              <span class="link">contact</span>
+              <span class="link">联系方式</span>
             </router-link>
           </li>
         </ul>

@@ -256,7 +256,39 @@
 </template>
 <script>
 export default {
-  name: 'ResumeView'
+  /* eslint-disable */
+  name: 'ResumeView',
+  data() {
+    return {}
+  },
+  methods: {
+    progressBtn() {
+      let numbers = document.querySelectorAll('.progress .num')
+      let progressBar = document.querySelectorAll('.progress .progress-bar')
+      let startValue = Array(numbers.length)
+      let intervals = Array(numbers.length)
+      let speed = 75
+      startValue.fill(0)
+
+      numbers.forEach((num, i) => {
+        intervals[i] = setInterval(() => {
+          if (startValue[i] === parseInt(num.dataset.num)) {
+            clearInterval(intervals[i])
+          } else {
+            startValue[i] += 1
+            num.innerHTML = `${startValue[i]}%`
+            progressBar[i].style.background = `conic-gradient(
+                    #78cc6d ${startValue[i] * 3.6}deg,
+                    #eeeeee ${startValue[i] * 3.6}deg
+                )`
+          }
+        }, speed)
+      })
+    }
+  },
+  mounted() {
+    this.progressBtn()
+  }
 }
 </script>
 <style scoped>
